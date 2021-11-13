@@ -47,7 +47,7 @@ Response
         "description": "Dogs"
     },
   ]
-    ```
+ ```
     
  List Category By Id
  

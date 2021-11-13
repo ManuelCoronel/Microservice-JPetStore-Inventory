@@ -4,7 +4,7 @@
 
 ### Descripcion Y Contexto
 
-Este proyecto esta desarrollando en el lengauje Pythonn usando el Framework de Django Rest. Se realizara un crud de Categorias, Productos e Items.
+Este proyecto esta desarrollando en el lengauje Python usando el Framework de Django Rest. Se realizara un crud de Categorias, Productos e Items.
 
 
 ### Requeriments
@@ -30,7 +30,7 @@ Este proyecto esta desarrollando en el lengauje Pythonn usando el Framework de D
 
 List Category
 
-Request body
+Request 
 
     --http://127.0.0.1:8000/petStore/category/
  
@@ -78,9 +78,40 @@ Request
 
 ### DELETE
 
-Request body
+Request 
 
 ```
     http://127.0.0.1:8000/petStore/category/2/
     
+```
+
+
+## Product
+
+### GET
+
+List Products
+
+Request 
+
+    --http://127.0.0.1:8000/petStore/product/
+    
+Response
+
+```
+[
+    {
+        "id": 1,
+        "name": "Angelfish",
+        "description": "Aquatic animal",
+        "categoy": 1
+    },
+    {
+        "id": 2,
+        "name": "ziberan",
+        "description": "Aquatic animal",
+        "categoy": 1
+    }
+]
+
 ```

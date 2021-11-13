@@ -153,3 +153,22 @@ http://127.0.0.1:8000/petStore/product/1/
 }
 
 ```
+
+
+Item
+
+### POST
+
+Request 
+
+```
+      http://127.0.0.1:8000/petStore/item/
+
+{
+    "image": "/archivos/975de4e0-3832-4e57-a81c-53b11f847ee1.jpg",
+    "description": "Large Angelfish2",
+    "quantity": 30,
+    "price": 2400.0,
+    "product": 1
+}
+```

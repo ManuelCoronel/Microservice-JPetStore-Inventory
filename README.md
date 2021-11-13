@@ -65,4 +65,22 @@ Response
    
  ```
    
+## POST
 
+Request 
+
+```
+   {
+        "description": "CategoryExample"
+    }
+
+```
+
+## DELETE
+
+Request body
+
+```
+    http://127.0.0.1:8000/petStore/category/2/
+    
+```

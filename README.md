@@ -65,7 +65,7 @@ Response
    
  ```
    
-## POST
+### POST
 
 Request 
 
@@ -76,7 +76,7 @@ Request
 
 ```
 
-## DELETE
+### DELETE
 
 Request body
 

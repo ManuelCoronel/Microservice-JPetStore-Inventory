@@ -70,6 +70,8 @@ Response
 Request 
 
 ```
+  --http://127.0.0.1:8000/petStore/category/2/
+  
    {
         "description": "CategoryExample"
     }
@@ -134,4 +136,20 @@ Response
     "categoy": 1
 }
 
-```    
+```
+
+
+## POST 
+
+
+Request
+```
+http://127.0.0.1:8000/petStore/product/1/
+
+{
+    "name": "Godzilla",
+    "description": "Aquatic animal",
+    "categoy": 2
+}
+
+```

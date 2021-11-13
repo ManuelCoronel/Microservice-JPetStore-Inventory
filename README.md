@@ -47,9 +47,22 @@ Response
         "description": "Dogs"
     },
   ]
- ```
+```
     
  List Category By Id
  
-    --request GET 
+ Request GET
+ 
+    --http://127.0.0.1:8000/petStore/category/
+    
+Response
+
+```
+{
+    "id": 2,
+    "description": "Dogs"
+}
+   
+ ```
+   
 

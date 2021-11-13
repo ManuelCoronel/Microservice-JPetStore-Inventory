@@ -115,3 +115,23 @@ Response
 ]
 
 ```
+
+List Product by Id
+
+
+Request 
+
+    --http://127.0.0.1:8000/petStore/product/1/
+    
+    
+Response
+
+```
+{
+    "id": 1,
+    "name": "Angelfish",
+    "description": "Aquatic animal",
+    "categoy": 1
+}
+
+```    

@@ -36,7 +36,9 @@ Request body
  
 Response 
  
- --   {
+```
+[
+    {
         "id": 1,
         "description": "Large Angelfish"
     },
@@ -44,6 +46,8 @@ Response
         "id": 2,
         "description": "Dogs"
     },
+  ]
+    ```
     
  List Category By Id
  

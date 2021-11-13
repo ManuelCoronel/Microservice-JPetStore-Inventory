@@ -24,3 +24,28 @@ Este proyecto esta desarrollando en el lengauje Pythonn usando el Framework de D
 
 
 
+# Category
+
+## GET
+
+List Category
+
+Request body
+
+    --http://127.0.0.1:8000/petStore/category/
+ 
+Response 
+ 
+ --   {
+        "id": 1,
+        "description": "Large Angelfish"
+    },
+    {
+        "id": 2,
+        "description": "Dogs"
+    },
+    
+ List Category By Id
+ 
+    --request GET 
+

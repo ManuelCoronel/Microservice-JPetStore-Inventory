@@ -2,12 +2,12 @@
 
 # Microservice with Django RestFrameWork
 
-## Descripcion Y Contexto
+### Descripcion Y Contexto
 
 Este proyecto esta desarrollando en el lengauje Pythonn usando el Framework de Django Rest. Se realizara un crud de Categorias, Productos e Items.
 
 
-## Requeriments
+### Requeriments
 
 - asgiref==3.4.1
 - Django==3.2.9
@@ -24,9 +24,9 @@ Este proyecto esta desarrollando en el lengauje Pythonn usando el Framework de D
 
 
 
-# Category
+## Category
 
-## GET
+### GET
 
 List Category
 

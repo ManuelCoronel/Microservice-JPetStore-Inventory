@@ -3,6 +3,7 @@ from apps.inventory.api.serializers import CategorySerializer, ProductSerializer
 from rest_framework.decorators import api_view
 from apps.inventory.models import Category, Product, Item
 from rest_framework.response import Response
+from drf_extra_fields.fields import Base64ImageField
 
 @api_view(['GET','POST'])
 def category_api_view(request):
@@ -97,7 +98,10 @@ def item_detail_view(request,pk=None):
     
     elif request.method == 'PUT':
         item = Item.objects.filter(id = pk).first()
+        data = request.data
+        print(data['quantity'])
         item_serializer = ItemSerializer(item,data = request.data)
+        print(item_serializer)
         if item_serializer.is_valid():
             item_serializer.save()
             return Response(item_serializer.data)

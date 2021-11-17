@@ -23,7 +23,7 @@ class Item(models.Model):
     description = models.CharField(max_length=50)
     quantity = models.IntegerField()
     price = models.FloatField()
-    image = models.ImageField()
+    image = models.ImageField(blank='',default="",upload_to="photos/")
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
 
     def __str__(self):

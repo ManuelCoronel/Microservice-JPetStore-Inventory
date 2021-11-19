@@ -172,3 +172,17 @@ Request
     "product": 1
 }
 ```
+### PUT
+
+Request
+
+
+```
+      http://127.0.0.1:8000/petStore/item/2
+
+{
+  
+    "quantity": 30
+
+}
+```

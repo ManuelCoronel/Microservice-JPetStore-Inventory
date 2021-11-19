@@ -21,3 +21,8 @@ sqlparse==0.4.2
 virtualenv==20.7.2
 virtualenv-clone==0.5.7
 Werkzeug==2.0.1
+djangorestframework
+django-simple-history
+django-cors-headers
+django-extra-fields==0.3
+Pillow

@@ -50,7 +50,7 @@ def product_api_view(request):
         return Response(products_serializer.data)
         
     elif request.method == 'POST':
-         products_serializer = ProductsSerializer(data=request.data)
+         products_serializer = ProductSimpleSerializer(data=request.data)
          if  products_serializer.is_valid():
             products_serializer.save()
             return Response( products_serializer.data)

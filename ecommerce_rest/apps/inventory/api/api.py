@@ -119,7 +119,7 @@ class Count_products(APIView):
             'cantidad' :len(Product.objects.all())}
         return Response(json.dumps(data))
 
-class Count_categorys(APIView):
+class Count_categories(APIView):
     def get(self, request,format=None):
         data = {
             'cantidad' :len(Category.objects.all())}

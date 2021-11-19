@@ -1,9 +1,11 @@
 from rest_framework.views import APIView
-from apps.inventory.api.serializers import CategorySerializer, ProductSerializer, ItemSerializer
+from apps.inventory.api.serializers import CategorySerializer, ProductSerializer, ItemSerializer, ProductSimpleSerializer, ItemSimpleSerializer
 from rest_framework.decorators import api_view
 from apps.inventory.models import Category, Product, Item
 from rest_framework.response import Response
 from drf_extra_fields.fields import Base64ImageField
+import json
+
 
 @api_view(['GET','POST'])
 def category_api_view(request):
@@ -48,7 +50,7 @@ def product_api_view(request):
         return Response(products_serializer.data)
         
     elif request.method == 'POST':
-         products_serializer = ProductSerializer(data=request.data)
+         products_serializer = ProductsSerializer(data=request.data)
          if  products_serializer.is_valid():
             products_serializer.save()
             return Response( products_serializer.data)
@@ -83,7 +85,7 @@ def item_api_view(request):
         return Response(items_serializer.data)
         
     elif request.method == 'POST':
-         items_serializer = ItemSerializer(data=request.data)
+         items_serializer = ItemSimpleSerializer(data=request.data)
          if  items_serializer.is_valid():
             items_serializer.save()
             return Response( items_serializer.data)
@@ -110,3 +112,21 @@ def item_detail_view(request,pk=None):
         item = Item.objects.filter(id = pk).first()
         item.delete()
         return Response('Eliminado')
+
+class Count_products(APIView):
+    def get(self, request,format=None):
+        data = {
+            'cantidad' :len(Product.objects.all())}
+        return Response(json.dumps(data))
+
+class Count_categorys(APIView):
+    def get(self, request,format=None):
+        data = {
+            'cantidad' :len(Category.objects.all())}
+        return Response(json.dumps(data))    
+        
+class Count_items(APIView):
+    def get(self, request,format=None):
+        data = {
+            'cantidad' :len(Item.objects.all())}
+        return Response(json.dumps(data))

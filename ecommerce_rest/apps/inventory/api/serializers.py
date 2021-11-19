@@ -10,12 +10,14 @@ class CategorySerializer(serializers.ModelSerializer):
 
 
 class ProductSerializer(serializers.ModelSerializer):
+    category = CategorySerializer(read_only=True)
     class Meta:
         model = Product
         fields = '__all__'
 
 class ItemSerializer(serializers.ModelSerializer):
     image = Base64ImageField(required=False)
+    product = ProductSerializer(read_only=True)
     class Meta:
         model = Item
         fields = '__all__'

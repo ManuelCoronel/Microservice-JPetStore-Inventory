@@ -102,18 +102,26 @@ Response
 
 ```
 [
+[
     {
         "id": 1,
-        "name": "Angelfish",
-        "description": "Aquatic animal",
-        "categoy": 1
+        "category": {
+            "id": 2,
+            "description": "Dogs"
+        },
+        "name": "Godzilla",
+        "description": "Aquatic animal"
     },
     {
         "id": 2,
+        "category": {
+            "id": 1,
+            "description": "Large Angelfish"
+        },
         "name": "ziberan",
-        "description": "Aquatic animal",
-        "categoy": 1
+        "description": "Aquatic animal"
     }
+]
 ]
 
 ```
@@ -157,20 +165,31 @@ http://127.0.0.1:8000/petStore/product/1/
 
 ## Item
 
-### POST
+### GET
 
 Request 
 
 ```
       http://127.0.0.1:8000/petStore/item/
+[
+    {
+        "id": 2,
+        "image": "/archivos/975de4e0-3832-4e57-a81c-53b11f847ee1.jpg",
+        "product": {
+            "id": 1,
+            "category": {
+                "id": 2,
+                "description": "Dogs"
+            },
+            "name": "Godzilla",
+            "description": "Aquatic animal"
+        },
+        "description": "Large Angelfish3",
+        "quantity": 2,
+        "price": 2400.0
+    }  
+]
 
-{
-    "image": "/archivos/975de4e0-3832-4e57-a81c-53b11f847ee1.jpg",
-    "description": "Large Angelfish2",
-    "quantity": 30,
-    "price": 2400.0,
-    "product": 1
-}
 ```
 ### PUT
 

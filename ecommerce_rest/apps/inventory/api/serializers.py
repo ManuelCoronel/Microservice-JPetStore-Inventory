@@ -19,3 +19,4 @@ class ItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
         fields = '__all__'
+        extra_kwargs = {'image': {'required': False},'description': {'required': False},'price': {'required': False},'product': {'required': False}} 

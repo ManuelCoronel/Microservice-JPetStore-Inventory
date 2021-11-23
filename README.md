@@ -4,7 +4,7 @@
 
 ### Descripcion Y Contexto
 
-Este proyecto esta desarrollando en el lengauje Python usando el Framework de Django Rest. Se realizara un crud de Categorias, Productos e Items.
+Este proyecto esta desarrollando en el lenguaje Python usando el Framework de Django Rest. Se realizara un crud de Categorias, Productos e Items.
 
 
 ### Requeriments

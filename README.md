@@ -4,7 +4,7 @@
 
 ### Descripcion Y Contexto
 
-Este proyecto esta desarrollando en el lengauje Python usando el Framework de Django Rest. Se realizara un crud de Categorias, Productos e Items.
+Este proyecto esta desarrollando en el lenguaje Python usando el Framework de Django Rest. Se realizara un crud de Categorias, Productos e Items.
 
 
 ### Requeriments
@@ -158,7 +158,7 @@ Response
     "id": 1,
     "name": "Angelfish",
     "description": "Aquatic animal",
-    "categoy": 1
+    "category": 1
 }
 
 ```
@@ -208,6 +208,30 @@ Request
 ]
 
 ```
+
+
+### POST
+
+Request
+
+
+```
+      http://127.0.0.1:8000/petStore/item/
+
+
+  
+    {
+        "description": "Small Angelfish",
+        "quantity": 33,
+        "price": 16.50,
+        "product":1,
+        "image":"imagenBase64"
+    }
+
+
+
+```
+
 ### PUT
 
 Request

@@ -224,7 +224,7 @@ Request
         "description": "Small Angelfish",
         "quantity": 33,
         "price": 16.50,
-        "product":1
+        "product":1,
         "image":"imagenBase64"
     }
 

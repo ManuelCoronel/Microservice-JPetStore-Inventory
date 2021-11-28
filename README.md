@@ -158,7 +158,7 @@ Response
     "id": 1,
     "name": "Angelfish",
     "description": "Aquatic animal",
-    "categoy": 1
+    "category": 1
 }
 
 ```

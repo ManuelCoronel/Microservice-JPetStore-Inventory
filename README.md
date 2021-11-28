@@ -208,6 +208,30 @@ Request
 ]
 
 ```
+
+
+### POST
+
+Request
+
+
+```
+      http://127.0.0.1:8000/petStore/item/
+
+
+  
+    {
+        "description": "Small Angelfish",
+        "quantity": 33,
+        "price": 16.50,
+        "product":1
+        "image":"imagenBase64"
+    }
+
+
+
+```
+
 ### PUT
 
 Request

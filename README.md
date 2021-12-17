@@ -49,7 +49,7 @@ List Category
 
 Request 
 
-    --http://127.0.0.1:8000/petStore/category/
+    --http://127.0.0.1:8000/api/v1/category/
  
 Response 
  
@@ -70,7 +70,7 @@ Response
  
  Request GET
  
-    --http://127.0.0.1:8000/petStore/category/
+    --http://127.0.0.1:8000/api/v1/category/2
     
 Response
 
@@ -87,7 +87,7 @@ Response
 Request 
 
 ```
-  --http://127.0.0.1:8000/petStore/category/2/
+  --http://127.0.0.1:8000/api/v1/category/
   
    {
         "description": "CategoryExample"
@@ -113,7 +113,7 @@ List Products
 
 Request 
 
-    --http://127.0.0.1:8000/petStore/product/
+    --http://127.0.0.1:8000/api/v1/product/
     
 Response
 
@@ -148,7 +148,7 @@ List Product by Id
 
 Request 
 
-    --http://127.0.0.1:8000/petStore/product/1/
+    --http://127.0.0.1:8000/api/v1/product/1/
     
     
 Response
@@ -169,7 +169,7 @@ Response
 
 Request
 ```
-http://127.0.0.1:8000/petStore/product/1/
+http://127.0.0.1:8000/api/v1/product/
 
 {
     "name": "Godzilla",
@@ -187,7 +187,7 @@ http://127.0.0.1:8000/petStore/product/1/
 Request 
 
 ```
-      http://127.0.0.1:8000/petStore/item/
+      http://127.0.0.1:8000/api/v1/item/
 [
     {
         "id": 2,
@@ -216,7 +216,7 @@ Request
 
 
 ```
-      http://127.0.0.1:8000/petStore/item/
+      http://127.0.0.1:8000/api/v1/item/
 
 
   
@@ -238,7 +238,7 @@ Request
 
 
 ```
-      http://127.0.0.1:8000/petStore/item/2
+      http://127.0.0.1:8000/api/v1/item/2
 
 {
   
